@@ -4,7 +4,7 @@ const clear = document.querySelector("#clear")
 
 btn1.addEventListener("click", randomize);
 function randomize(){
-    const num = Math.floor(Math.random() * (peeps.children.length - 0) + 0);
+    const num = Math.floor(Math.random() * (peeps.children.length));
     peeps.children[num].setAttribute("class", "col-3 bg-danger text-white text-center border m-2 P-2 h1")
 }
 
